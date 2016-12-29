@@ -1,0 +1,269 @@
+extends layout
+
+block content
+
+  body#body
+   
+    #preloader
+      .loder-box
+        .battery
+    // end preloader
+    //
+      Fixed Navigation
+      ====================================
+    header#navigation.navbar-inverse.navbar-fixed-top.animated-header
+      .container
+        .navbar-header
+          // responsive nav button
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          // /responsive nav button
+          // logo
+          h1.navbar-brand
+            a(href='#body')
+          // /logo
+        // main nav
+        nav.collapse.navbar-collapse.navbar-right(role='navigation')
+          ul#nav.nav.navbar-nav
+            li
+              a(href='/index') Home
+            li
+              a(href='#social3.parallax') Service
+            li
+              a(href='#price') Price
+            li
+              a(href='/contact') Contact
+        // /main nav
+    //
+      End Fixed Navigation
+      ====================================
+    main.site-content(role='main')
+      //
+        Home Slider
+        ====================================
+      section#home-slider
+        #slider.sl-slider-wrapper
+          .sl-slider
+            .sl-slide(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
+              .bg-img.bg-img-8
+              .slide-caption
+                .caption-content
+                  h2.animated.fadeInDown Event Venues
+                  span.animated.fadeInDown We have gathered the best host venues in the country for them to choose from. So no matter what they’re looking for, there’s a host venue that suits their liking. We are truly determined and committed to provide venue seekers with a unique experience and convenience in their events.
+                  
+            .sl-slide(data-orientation='vertical', data-slice1-rotation='10', data-slice2-rotation='-15', data-slice1-scale='1.5', data-slice2-scale='1.5')
+              .bg-img.bg-img-9
+              .slide-caption
+                .caption-content
+                  h2 
+                  span 
+                  span
+                    | 
+                    br
+                    | 
+                  
+            .sl-slide(data-orientation='horizontal', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
+              .bg-img.bg-img-10
+              .slide-caption
+                .caption-content
+                  h2 
+                  span
+                  
+          // /sl-slider
+          //
+            <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+            </nav>
+          nav#nav-arrows.nav-arrows.hidden-xs.hidden-sm.visible-md.visible-lg
+            a.sl-prev(href='javascript:;')
+              i.fa.fa-angle-left.fa-3x
+            a.sl-next(href='javascript:;')
+              i.fa.fa-angle-right.fa-3x
+          nav#nav-dots.nav-dots.visible-xs.visible-sm.hidden-md.hidden-lg
+            span.nav-dot-current
+            span
+            span
+        // /slider-wrapper
+      //
+        End Home SliderEnd
+        ====================================
+      // about section
+      section#about2
+        .container
+          .row
+            .welcome-block2
+                h3
+                  center
+                    | Event Venues
+                .message-body2
+                  
+                  p
+                    center
+                      | When organizing an event, you are confronted by many decisions. However, choosing a venue is the one decision that will have the largest impact on your event. Critical planning information, such as the date for the event, is dependent on the venue you select. Understandably, making this choice can be a bit intimidating as it can be hard to know what to look for when selecting a venue.  That is why The Event is one of the best events venue you can go to.
+                  br
+                  p
+                    center
+                      | A convenient location means different things for different events. For an event with attendees within a limited geographic range, a venue within a reasonable distance from most attendees’ homes or places of work may make sense. However, if many attendees will be traveling from out of town, hosting the event at a place near the airport or their hotels will be beneficial. Better still, if attendees are being housed at a single location, hosting the event at that hotel mitigates the need for valet parking and the chance that attendees will be late due to getting lost.
+                
+      // end about section
+
+      // portfolio section
+      section#portfolio
+        .container
+          .row
+            .sec-title.text-center.wow.animated.fadeInDown
+              h2 VENUES AROUND METRO
+              p
+                | Check out our top Venues around Metro Manila:
+            ul.project-wrapper.wow.animated.fadeInUp
+              li.portfolio-item
+                img.img-responsive(src='images/venue/venue8.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/venue/venue10.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/venue/venue7.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/venue/venue11.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/venue/venue9.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/venue/venue12.jpg', alt='')
+      // end portfolio section
+      // Testimonial section
+      section#testimonials3.parallax
+        .overlay3
+          .container
+            .row
+              .sec-title.text-center.white.wow.animated.fadeInDown
+                h2 Featured Venues
+              #testimonial.wow.animated.fadeInUp
+                .testimonial-item2.text-center
+                  img(src='images/venue/venue1.jpg', alt='')
+                  .clearfix
+                    span The Glass Garden
+                    p
+                      | Evangelista Ave, Pasig, 1610 Metro Manila
+                .testimonial-item2.text-center
+                  img(src='images/venue/venue2.jpg', alt='')
+                  .clearfix
+                    span Secret Garden
+                    p
+                      | Seiko, Novaliches, Quezon City, 1117 Metro Manila
+                .testimonial-item2.text-center
+                  img(src='images/venue/venue3.jpg', alt='')
+                  .clearfix
+                    span Renassaince Convention Center
+                    p
+                      | A. Bonifacio Ave, Marikina, Metro Manila
+      // end Testimonial section
+      // Price section
+      section#price
+
+        .container
+          .row
+            .sec-title.text-center.wow.animated.fadeInDown
+              h2 Price
+              p Our price for your ideal venue
+            .col-md-4.wow.animated.fadeInUp
+              .price-table.text-center
+                span Silver
+                .value
+                  span ₱
+                  span 20,000
+                  br
+                ul
+                  portfolio-item
+                  img.img-responsive(src='images/venue/venue4.jpg', alt='Seiko, Novaliches, Quezon City, 1117 Metro Manila')
+
+                  ul.external2
+                    li
+                     a.fancybox(title='SILVER', data-fancybox-group='works', href='images/venue/venue4.jpg')
+                      i.fa.fa-search
+                    
+                  figcaption.mask2
+                  li Secret Garden
+                  li Seiko, Novaliches, Quezon City, 1117 Metro Manila
+                  li Price Range: Php 10,000 - Php 20,000
+                  li
+                    a(href='/contact') sign up
+
+            .col-md-4.wow.animated.fadeInUp(data-wow-delay='0.4s')
+              .price-table.featured.text-center
+                span Gold
+                .value
+                  span ₱
+                  span 25,000
+                  br
+                  
+                ul
+                  portfolio-item
+                  img.img-responsive(src='images/venue/venue5.jpg', alt='')
+
+                  ul.external2
+                    li
+                     a.fancybox(title='GOLD', data-fancybox-group='works', href='images/venue/venue5.jpg')
+                      i.fa.fa-search
+                    
+                  figcaption.mask2
+                  
+                  li Renassaince Convention Center
+                  li A. Bonifacio Ave, Marikina, Metro Manila
+                  li Price Range: Php 15,000 - Php 25,000
+                  li
+                    a(href='/contact') sign up
+            .col-md-4.wow.animated.fadeInUp(data-wow-delay='0.8s')
+              .price-table.text-center
+                span Diamond
+                .value
+                  span ₱
+                  span 90,000
+                  
+                  span
+                ul
+                  portfolio-item
+                  img.img-responsive(src='images/venue/venue6.jpg', alt='')
+
+                  ul.external2
+                    li
+                     a.fancybox(title='DIAMOND', data-fancybox-group='works', href='images/venue/venue6.jpg')
+                      i.fa.fa-search
+                    
+                  figcaption.mask2
+                  li The Glass Garden
+                  li Evangelista Ave, Pasig, 1610 Metro Manila
+                  li Price Range: Php 60,000 - Php 90,000
+                  li
+                    a(href='/contact') sign up
+      // end Price section
+      // Social section
+      section#social3.parallax
+        .overlay3
+          .container
+            .row
+              .sec-title.text-center.white.wow.animated.fadeInDown
+                h2 WE SIMPLIFY THE LIVES OF VENUE SEEKERS
+                p an online reservations portal, advertising company and marketing arm exclusively for event venues. As an innovator in the local events industry, we are pioneering the concept of FREE online events venue reservations in the Philippines.
+              ul.social-button
+                li.wow.animated.zoomIn
+                  a(href='/')
+                    i.fa.fa-group.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.3s')
+                  a(href='/catering')
+                    i.fa.fa-birthday-cake.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.6s')
+                  a(href='/venue ')
+                    i.fa.fa-globe.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.6s')
+                  a(href='/photo')
+                    i.fa.fa-camera-retro.fa-2x
+      // end Social section
+ 

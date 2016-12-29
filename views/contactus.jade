@@ -1,0 +1,84 @@
+extends layout
+
+block content
+
+  body#body
+    // preloader
+    #preloader
+      .loder-box
+        .battery
+    // end preloader
+    //
+      Fixed Navigation
+      ====================================
+    header#navigation.navbar-inverse.navbar-fixed-top.animated-header
+      .container
+        .navbar-header
+          // responsive nav button
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          // /responsive nav button
+          // logo
+          h1.navbar-brand
+            a(href='#body')
+          // /logo
+        // main nav
+        nav.collapse.navbar-collapse.navbar-right(role='navigation')
+          ul#nav.nav.navbar-nav
+            li
+              a(href='/index') Home
+            li
+              a(href='/index') Service
+            li
+              a(href='/index') About us
+            li
+              a(href='/contact') Contact
+        // /main nav
+    //
+      End Fixed Navigation
+      ====================================
+    main.site-content(role='main')
+
+      // Contact section
+      
+      section#contact
+        .container
+          .row
+            .sec-title.text-center.wow.animated.fadeInDown
+              br
+              br
+              h2 Let us know about your event!
+              p Your Inquries will be sent to TheEventMailSample@gmail.com
+            .col-md-7.contact-form.wow.animated.fadeInLeft
+              form(action='contact/send', method='post')
+                .input-field
+                  input.form-control(type='text', name='name', placeholder='Your Name...')
+                .input-field
+                  input.form-control(type='email', name='email', placeholder='Your Email...')
+                .input-field
+                  input.form-control(type='text', name='subject', placeholder='Subject...')
+                .input-field
+                  textarea.form-control(name='message', placeholder='Messages...')
+                button#submit.btn.btn-blue.btn-effect(type='submit') Send
+            .col-md-5.wow.animated.fadeInRight
+              address.contact-details
+                h3 Contact Us
+                p
+                  i.fa.fa-pencil
+                  | The Event
+                  span PO Box 345678
+                  span Sta. Mesa, Manila 
+                  span Philippines
+                br
+                p
+                  i.fa.fa-phone
+                  | Phone: (415) 124-5678
+                p
+                  i.fa.fa-envelope
+                  | TheEventMailSample@gmail.com
+      // end Contact section
+      
+      extends layout

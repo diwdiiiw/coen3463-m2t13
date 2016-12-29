@@ -1,0 +1,322 @@
+extends layout
+
+block content
+
+  body#body
+   
+    #preloader
+      .loder-box
+        .battery
+    // end preloader
+    //
+      Fixed Navigation
+      ====================================
+    header#navigation.navbar-inverse.navbar-fixed-top.animated-header
+      .container
+        .navbar-header
+          // responsive nav button
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          // /responsive nav button
+          // logo
+          h1.navbar-brand
+            a(href='/')
+          // /logo
+        // main nav
+        nav.collapse.navbar-collapse.navbar-right(role='navigation')
+          ul#nav.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+              a(href='#service') Service
+            li
+              a(href='#testimonials') Team13
+            li
+              a(href='/contact') Contact
+        // /main nav
+    //
+      End Fixed Navigation
+      ====================================
+    main.site-content(role='main')
+      //
+        Home Slider
+        ====================================
+      section#home-slider
+        #slider.sl-slider-wrapper
+          .sl-slider
+            .sl-slide(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
+              .bg-img.bg-img-1
+              .slide-caption
+                .caption-content
+                  h2.animated.fadeInDown Quality and Satisfaction of Memorable Events!
+                  span.animated.fadeInDown we are all about making your dream event come true.
+                  
+            .sl-slide(data-orientation='vertical', data-slice1-rotation='10', data-slice2-rotation='-15', data-slice1-scale='1.5', data-slice2-scale='1.5')
+              .bg-img.bg-img-2
+              .slide-caption
+                .caption-content
+                  h2 EVENT VENUE
+                  span 
+                  span
+                    | Tailor-fitted to your dreams and ideas, we make sure that your event
+                    br
+                    | will not only be memorable but also, unique, excellent, and one-of-a-kind!
+                  a.btn.btn-blue.btn-effect(href='/venue') Join US
+            .sl-slide(data-orientation='horizontal', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
+              .bg-img.bg-img-3
+              .slide-caption
+                .caption-content
+                  h2 We Got It Covered ! 
+                  span Our aim is to provide you with invaluable photographic memories, digging deep into every aspect of your event to capture the action, emotion, excitement and timeless moments as they unfold.
+                  a.btn.btn-blue.btn-effect(href='photo') Join US
+            .sl-slide(data-orientation='horizontal', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
+              .bg-img.bg-img-4
+              .slide-caption
+                .caption-content
+                  h2 occasions with great food and service! 
+                  span Let Simply Delicious Catering take your event from good to great! Whether the occasion calls for a plated dinner, a lavish buffet, lively food performance stations, a chic selection of butler-passed hors d’oeuvres or a combination of service styles, Simply Delicious will create an innovative menu and style that is uniquely yours.
+                  a.btn.btn-blue.btn-effect(href='catering') Join US
+          // /sl-slider
+          //
+            <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+            </nav>
+          nav#nav-arrows.nav-arrows.hidden-xs.hidden-sm.visible-md.visible-lg
+            a.sl-prev(href='javascript:;')
+              i.fa.fa-angle-left.fa-3x
+            a.sl-next(href='javascript:;')
+              i.fa.fa-angle-right.fa-3x
+          nav#nav-dots.nav-dots.visible-xs.visible-sm.hidden-md.hidden-lg
+            span.nav-dot-current
+            span
+            span
+        // /slider-wrapper
+      //
+        End Home SliderEnd
+        ====================================
+      // about section
+      section#about
+        .container
+          .row
+            .col-md-4.wow.animated.fadeInLeft
+              .recent-works
+                h3 What We Offer
+                #works
+                  .work-item
+                    p
+                      | Event Management
+                      br
+                      br
+                      |  Values your ideas, dreams and expectations. We not only commit to hear you out, but also do our best to manage expectations  by delivering the best event possible.
+                  .work-item
+                    p
+                      | Photo Coverage 
+                      br
+                      br
+                      |  A dynamic posse of professional event photographers in the Philippines specializing on various types of photography. We cover events like anniversary, baptism, birthday party, debut, wedding, corporate events and more. 
+                  .work-item
+                    p
+                      | Events Venue 
+                      br
+                      br
+                      |  An online reservations portal, advertising company and marketing arm exclusively for event venues. As an innovator in the local events industry, we are pioneering the concept of FREE online events venue reservations in the Philippines.
+                  .work-item
+                    p
+                      | Caterings
+                      br
+                      br
+                      |  Whether you’re planning a party for ten guests or a thousand, we will deliver on our promise of a flawless culinary experience with superior service and our signature flair for trendsetting presentation and unexpected details.
+            .col-md-7.col-md-offset-1.wow.animated.fadeInRight
+              .welcome-block
+                h3 Welcome To Our Site
+                .message-body
+                  img.pull-left(src='images/member-1.jpg', alt='member')
+                  p
+                    | Occasions, no matter how simple or grand they may be, become so much more meaningful when you share them with your loved ones. These occasions mark important moments in our lives, helping us to appreciate life as an eventful journey that is worth celebrating and looking back to later on as we go along the path that we are taking. Making events out of different significant stages in our lives makes living simply more momentous and memorable. We fully embrace our inner social butterfly, and it shows in every Simply Delicious celebration! 
+                a.btn.btn-border.btn-effect.pull-right(href='#') Read More
+      // end about section
+      // Service section
+      section#service
+        .container
+          .row
+            .sec-title.text-center
+              h2.wow.animated.bounceInLeft Service
+              p.wow.animated.bounceInRight The Key Features of our Job
+            .col-md-3.col-sm-6.col-xs-12.text-center.wow.animated.zoomIn
+              .service-item
+                .service-icon
+                  a(href='/')
+                    i.fa.fa-group.fa-3x
+                h3 Events
+                p Having computer problems? Let the medics at IT-WORKS take care of all your PC needs. Feel free to come in and drop off your item with no need for an appointment!
+            .col-md-3.col-sm-6.col-xs-12.text-center.wow.animated.zoomIn(data-wow-delay='0.3s')
+              .service-item
+                .service-icon
+                  a(href='/catering')
+                   i.fa.fa-birthday-cake.fa-3x
+                h3 Caterings
+                p We provide catering services for weddings, debuts, birthday celebrations, get-togethers, baptisms, house blessings, corporate events, meetings and seminars, product launches, Christmas parties, or any event you'd like to pull off without shopping, cooking, and cleaning!
+            .col-md-3.col-sm-6.col-xs-12.text-center.wow.animated.zoomIn(data-wow-delay='0.6s')
+              .service-item
+                .service-icon
+                  a(href='/venue')
+                    i.fa.fa-globe.fa-3x
+                h3 Venue
+                p We have gathered the best host venues in the country for them to choose from. So no matter what they’re looking for, there’s a host venue that suits their liking. We are truly determined and committed to provide venue seekers with a unique experience and convenience in their events.
+            .col-md-3.col-sm-6.col-xs-12.text-center.wow.animated.zoomIn(data-wow-delay='0.9s')
+              .service-item
+                .service-icon
+                  a(href='/photo')
+                    i.fa.fa-camera-retro.fa-3x
+                h3 Photography
+                p “Premium-Quality Event Photography Service You Can Afford!” To serve as an affordable alternative to the consumer’s event photography needs whilst being at par with the industry standards
+      // end Service section
+      // portfolio section
+      section#portfolio
+        .container
+          .row
+            .sec-title.text-center.wow.animated.fadeInDown
+              h2 FEATURED PROJECTS
+              p
+                | Check this out our recent events! 
+            ul.project-wrapper.wow.animated.fadeInUp
+              li.portfolio-item
+                img.img-responsive(src='images/portfolio/item.jpg', alt='We look forward to meeting you personally and hear out your ideas and desires for your dream event.')
+                figcaption.mask
+                  h3  Let’s Make Them a Reality
+                  p We look forward to meeting you personally and hear out your ideas and desires for your dream event.
+                ul.external
+                  li
+                    a.fancybox(title='Let’s Make Them a Reality', data-fancybox-group='works', href='images/portfolio/item.jpg')
+                      i.fa.fa-search
+                  li
+                    a(href='')
+                      i.fa.fa-link
+                      
+              li.portfolio-item
+                img.img-responsive(src='images/portfolio/item2.jpg', alt='We take pride and excellence in providing affordable, premium-quality event photography service.')
+                figcaption.mask
+                  h3 Packages Flexible to your Budget 
+                  p  We take pride and excellence in providing affordable, premium-quality event photography service.
+                ul.external
+                  li
+                    a.fancybox(title='Packages Flexible to your Budget', href='images/portfolio/item2.jpg', data-fancybox-group='works')
+                      i.fa.fa-search
+                  li
+                    a(href='')
+                      i.fa.fa-link
+              li.portfolio-item
+                img.img-responsive(src='images/portfolio/item3.jpg', alt='former student of PUP and Continuing  Education in Professional Events Management ')
+                figcaption.mask
+                  h3 Professional Event Planner 
+                  p former student of PUP and Continuing  Education in Professional Events Management
+                ul.external
+                  libg-img-1
+                    a.fancybox(title='Professional Event Planner', data-fancybox-group='works', href='images/portfolio/item3.jpg')
+                      i.fa.fa-search
+                  li
+                    a(href='')
+                      i.fa.fa-link
+              li.portfolio-item
+                img.img-responsive(src='images/portfolio/item4.jpg', alt=' We respect your busy schedule and make the event planning process as convenient and stress-free as possible.')
+                figcaption.mask
+                  h3 No Time To Waste
+                  p  We respect your busy schedule and make the event planning process as convenient and stress-free as possible.  
+                ul.external
+                  li
+                    a.fancybox(title='No Time To Waste', data-fancybox-group='works', href='images/portfolio/item4.jpg')
+                      i.fa.fa-search
+                  li
+                    a(href='')
+                      i.fa.fa-link
+              li.portfolio-item
+                img.img-responsive(src='images/portfolio/item5.jpg', alt='From the planning to the clean up and everything in between, hosting a party is a big job! But on our team, youll just enjoy ! ')
+                figcaption.mask
+                  h3 Keep Calm ! 
+                  p From the planning to the clean up and everything in between, hosting a party is a big job! But on our team, youll just enjoy !,  
+                ul.external
+                  li
+                    a.fancybox(title='Keep Calm ! ', data-fancybox-group='works', href='images/portfolio/item5.jpg')
+                      i.fa.fa-search
+                  li
+                    a(href='')
+                      i.fa.fa-link
+              li.portfolio-item
+                img.img-responsive(src='images/portfolio/item6.jpg', alt='superior service and the design-driven eye for detail that makes the atmosphere beautiful and memorable.')
+                figcaption.mask
+                  h3 Simply Stunning
+                  p  superior service and the design-driven eye for detail that makes the atmosphere beautiful and memorable.
+                ul.external
+                  li
+                    a.fancybox(title='Simply Stunning', data-fancybox-group='works', href='images/portfolio/item6.jpg')
+                      i.fa.fa-search
+                  li
+                    a(href='')
+                      i.fa.fa-link
+      // end portfolio section
+      // Testimonial section
+      section#testimonials.parallax
+        .overlay
+          .container
+            .row
+              .sec-title.text-center.white.wow.animated.fadeInDown
+                h2 TEAM 13
+              #testimonial.wow.animated.fadeInUp
+                .testimonial-item.text-center
+                  img(src='images/sanjuan.jpg', alt='Our Clients')
+                  .clearfix
+                    span Romar San Juan
+                    p
+                      | BSCPE 5-1
+                    p
+                      | Plus text (Sample Only)
+                .testimonial-item.text-center
+                  img(src='images/diwa.jpg', alt='Our Clients')
+                  .clearfix
+                    span Angela Rose Diwa
+                    p
+                      | BSCPE 5-1
+                    p
+                      | Plus text (Sample Only)
+
+      // end Testimonial section
+      // about section
+      section#about
+        .sec-title.text-center.white.wow.animated.fadeInDown
+                h1 We are located @ 
+                p
+                  | Polytechnic University of the Philippines Sta. Mesa Manila
+                p
+                  | Sta. Mesa Manila
+      section#google-map
+      #map-canvas.wow.animated.fadeInUp
+
+      section#about
+
+      // end about section
+      // Social section
+      section#social.parallax
+        .overlay
+          .container
+            .row
+              .sec-title.text-center.white.wow.animated.fadeInDown
+                h2 FOLLOW US
+                p Sample Buttons but without links :>
+              ul.social-button
+                li.wow.animated.zoomIn
+                  a(href='#')
+                    i.fa.fa-thumbs-up.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.3s')
+                  a(href='#')
+                    i.fa.fa-twitter.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.6s')
+                  a(href='#')
+                    i.fa.fa-dribbble.fa-2x
+      // end Social section
+     
+     
+    

@@ -1,0 +1,269 @@
+extends layout
+
+block content
+
+  body#body
+   
+    #preloader
+      .loder-box
+        .battery
+    // end preloader
+    //
+      Fixed Navigation
+      ====================================
+    header#navigation.navbar-inverse.navbar-fixed-top.animated-header
+      .container
+        .navbar-header
+          // responsive nav button
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          // /responsive nav button
+          // logo
+          h1.navbar-brand
+            a(href='#body')
+          // /logo
+        // main nav
+        nav.collapse.navbar-collapse.navbar-right(role='navigation')
+          ul#nav.nav.navbar-nav
+            li
+              a(href='/index') Home
+            li
+              a(href='#social2.parallax') Service
+            li
+              a(href='#price') Price
+            li
+              a(href='/contact') Contact
+        // /main nav
+    //
+      End Fixed Navigation
+      ====================================
+    main.site-content(role='main')
+      //
+        Home Slider
+        ====================================
+      section#home-slider
+        #slider.sl-slider-wrapper
+          .sl-slider
+            .sl-slide(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
+              .bg-img.bg-img-5
+              .slide-caption
+                .caption-content
+                  h2.animated.fadeInDown Delicious Foods
+                  span.animated.fadeInDown We provide catering services for weddings, debuts, birthday celebrations, get-togethers, baptisms, house blessings, corporate events, meetings and seminars, product launches, Christmas parties, or any event you'd like to pull off without shopping, cooking, and cleaning!
+                  
+            .sl-slide(data-orientation='vertical', data-slice1-rotation='10', data-slice2-rotation='-15', data-slice1-scale='1.5', data-slice2-scale='1.5')
+              .bg-img.bg-img-6
+              .slide-caption
+                .caption-content
+                  h2 
+                  span 
+                  span
+                    | 
+                    br
+                    | 
+                  
+            .sl-slide(data-orientation='horizontal', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
+              .bg-img.bg-img-7
+              .slide-caption
+                .caption-content
+                  h2 
+                  span
+                  
+          // /sl-slider
+          //
+            <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+            </nav>
+          nav#nav-arrows.nav-arrows.hidden-xs.hidden-sm.visible-md.visible-lg
+            a.sl-prev(href='javascript:;')
+              i.fa.fa-angle-left.fa-3x
+            a.sl-next(href='javascript:;')
+              i.fa.fa-angle-right.fa-3x
+          nav#nav-dots.nav-dots.visible-xs.visible-sm.hidden-md.hidden-lg
+            span.nav-dot-current
+            span
+            span
+        // /slider-wrapper
+      //
+        End Home SliderEnd
+        ====================================
+      // about section
+      section#about2
+        .container
+          .row
+            .welcome-block2
+                h3
+                  center
+                    | CATERING SERVICES
+                .message-body2
+                  
+                  p
+                    center
+                      | Are you planning for your dream wedding? A themed party for your child’s birthday, or a prominent event for your company? Let us know and we would love to attend to your needs. Think of us not just a caterer but also your friend who can help you lessen the worry and hassle. We will assist you during the process of conceptualizing, budgeting, planning and especially on the day itself. So together, let us make your dream event possible.
+                  br
+                  p
+                    center
+                      | The Event Catering Services is a fine food company specializing in imaginative recipes that bring flavors from around the world along with contemporary original dishes. We use the finest and freshest ingredients plus set a higher level of care in our preparation of delicious foods. 
+                
+      // end about section
+
+      // portfolio section
+      section#portfolio
+        .container
+          .row
+            .sec-title.text-center.wow.animated.fadeInDown
+              h2 Best Tasting Food
+              p
+                | Check out our best offered food:
+            ul.project-wrapper.wow.animated.fadeInUp
+              li.portfolio-item
+                img.img-responsive(src='images/caterings/cat4.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/caterings/cat5.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/caterings/cat6.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/caterings/cat7.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/caterings/cat8.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/caterings/cat9.jpg', alt='')
+      // end portfolio section
+      // Testimonial section
+      section#testimonials2.parallax
+        .overlay2
+          .container
+            .row
+              .sec-title.text-center.white.wow.animated.fadeInDown
+                h2 FOOD PACKAGE
+              #testimonial.wow.animated.fadeInUp
+                .testimonial-item2.text-center
+                  img(src='images/caterings/cat10.jpg', alt='')
+                  .clearfix
+                    span SILVER
+                    p
+                      | Asian Cuisine , International Cuisine and Filipino Cuisine
+                .testimonial-item2.text-center
+                  img(src='images/caterings/cat11.jpg', alt='')
+                  .clearfix
+                    span GOLD
+                    p
+                      | Asian Cuisine , International Cuisine and Filipino Cuisine
+                .testimonial-item2.text-center
+                  img(src='images/caterings/cat12.jpg', alt='')
+                  .clearfix
+                    span DIAMOND
+                    p
+                      | Asian Cuisine , International Cuisine and Filipino Cuisine
+      // end Testimonial section
+      // Price section
+      section#price
+
+        .container
+          .row
+            .sec-title.text-center.wow.animated.fadeInDown
+              h2 Price
+              p Our price for ideal food catering
+            .col-md-4.wow.animated.fadeInUp
+              .price-table.text-center
+                span Silver
+                .value
+                  span ₱
+                  span 260.00
+                  br
+                  span +12% VAT min. 100 Pax
+                ul
+                  portfolio-item
+                  img.img-responsive(src='images/caterings/price.jpg', alt='')
+
+                  ul.external2
+                    li
+                     a.fancybox(title='SILVER', data-fancybox-group='works', href='images/caterings/price.jpg')
+                      i.fa.fa-search
+                    
+                  figcaption.mask2
+                  li Menu A: Asian Cuisine
+                  li Menu B: International/ Filipino
+                  li +Additional Premium Orders
+                  li
+                    a(href='/contact') sign up
+
+            .col-md-4.wow.animated.fadeInUp(data-wow-delay='0.4s')
+              .price-table.featured.text-center
+                span Gold
+                .value
+                  span ₱
+                  span 350.00
+                  br
+                  span +12% VAT min. 80Pax
+                ul
+                  portfolio-item
+                  img.img-responsive(src='images/caterings/price.jpg', alt='')
+
+                  ul.external2
+                    li
+                     a.fancybox(title='GOLD', data-fancybox-group='works', href='images/caterings/price2.jpg')
+                      i.fa.fa-search
+                    
+                  figcaption.mask2
+                  li Menu A: Asian Cuisine
+                  li Menu B: International/ Filipino
+                  li Menu c: Overload Asian Cuisine
+                  li
+                    a(href='/contact') sign up
+            .col-md-4.wow.animated.fadeInUp(data-wow-delay='0.8s')
+              .price-table.text-center
+                span Diamond
+                .value
+                  span ₱
+                  span 415.00
+                  br
+                  span +12% VAT min. 80Pax
+                ul
+                  portfolio-item
+                  img.img-responsive(src='images/caterings/price.jpg', alt='')
+
+                  ul.external2
+                    li
+                     a.fancybox(title='DIAMOND', data-fancybox-group='works', href='images/caterings/price3.jpg')
+                      i.fa.fa-search
+                    
+                  figcaption.mask2
+                  li Menu A: Asian Cuisine
+                  li Menu B: International/ Filipino
+                  li Menu c: Overload International
+                  li
+                    a(href='/contact') sign up
+      // end Price section
+      // Social section
+      section#social2.parallax
+        .overlay2
+          .container
+            .row
+              .sec-title.text-center.white.wow.animated.fadeInDown
+                h2 Why choose The Event's Catering?
+                p Dedication, Commitment, Professionalism, Excellence, Affordable. These are just more than just great concepts. They use the guiding business principles of Ignacio’s Catering Services.
+              ul.social-button
+                li.wow.animated.zoomIn
+                  a(href='/')
+                    i.fa.fa-group.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.3s')
+                  a(href='/catering')
+                    i.fa.fa-birthday-cake.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.6s')
+                  a(href='/venue ')
+                    i.fa.fa-globe.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.6s')
+                  a(href='/photo')
+                    i.fa.fa-camera-retro.fa-2x
+      // end Social section
+ 

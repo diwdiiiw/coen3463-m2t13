@@ -1,0 +1,269 @@
+extends layout
+
+block content
+
+  body#body
+   
+    #preloader
+      .loder-box
+        .battery
+    // end preloader
+    //
+      Fixed Navigation
+      ====================================
+    header#navigation.navbar-inverse.navbar-fixed-top.animated-header
+      .container
+        .navbar-header
+          // responsive nav button
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          // /responsive nav button
+          // logo
+          h1.navbar-brand
+            a(href='#body')
+          // /logo
+        // main nav
+        nav.collapse.navbar-collapse.navbar-right(role='navigation')
+          ul#nav.nav.navbar-nav
+            li
+              a(href='/index') Home
+            li
+              a(href='#social4.parallax') Service
+            li
+              a(href='#price') Price
+            li
+              a(href='/contact') Contact
+        // /main nav
+    //
+      End Fixed Navigation
+      ====================================
+    main.site-content(role='main')
+      //
+        Home Slider
+        ====================================
+      section#home-slider
+        #slider.sl-slider-wrapper
+          .sl-slider
+            .sl-slide(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
+              .bg-img.bg-img-11
+              .slide-caption
+                .caption-content
+                  h2.animated.fadeInDown Capture Every Moments
+                  span.animated.fadeInDown We are a group of photographers and videographers dedicated in working for art. We love happy moments and our aim is to capture these on your special day.
+                  
+            .sl-slide(data-orientation='vertical', data-slice1-rotation='10', data-slice2-rotation='-15', data-slice1-scale='1.5', data-slice2-scale='1.5')
+              .bg-img.bg-img-12
+              .slide-caption
+                .caption-content
+                  h2 
+                  span 
+                  span
+                    | 
+                    br
+                    | 
+                  
+            .sl-slide(data-orientation='horizontal', data-slice1-rotation='3', data-slice2-rotation='3', data-slice1-scale='2', data-slice2-scale='1')
+              .bg-img.bg-img-13
+              .slide-caption
+                .caption-content
+                  h2 
+                  span
+                  
+          // /sl-slider
+          //
+            <nav id="nav-arrows" class="nav-arrows">
+            <span class="nav-arrow-prev">Previous</span>
+            <span class="nav-arrow-next">Next</span>
+            </nav>
+          nav#nav-arrows.nav-arrows.hidden-xs.hidden-sm.visible-md.visible-lg
+            a.sl-prev(href='javascript:;')
+              i.fa.fa-angle-left.fa-3x
+            a.sl-next(href='javascript:;')
+              i.fa.fa-angle-right.fa-3x
+          nav#nav-dots.nav-dots.visible-xs.visible-sm.hidden-md.hidden-lg
+            span.nav-dot-current
+            span
+            span
+        // /slider-wrapper
+      //
+        End Home SliderEnd
+        ====================================
+      // about section
+      section#about2
+        .container
+          .row
+            .welcome-block2
+                h3
+                  center
+                    | Photo and Video Coverage
+                .message-body2
+                  
+                  p
+                    center
+                      | Capturing timeless memories, because life is worth remembering...
+                  br
+                  p
+                    center
+                      | Our services are flexible and varied. Aside from weddings and debuts, we also do a lot of corporate events and audio visual presentations. Portraiture is one of our specializations. We have a studio in our Quezon City office complete with professional studio lightings and retractable backgrounds. We also offer home service family portraiture. From time to time we also do product or food shots.
+                
+      // end about section
+
+      // portfolio section
+      section#portfolio
+        .container
+          .row
+            .sec-title.text-center.wow.animated.fadeInDown
+              h2 Previous Events 
+              p
+                | Check out our covered events:
+            ul.project-wrapper.wow.animated.fadeInUp
+              li.portfolio-item
+                img.img-responsive(src='images/photo/photo4.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/photo/photo5.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/photo/photo6.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/photo/photo7.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/photo/photo8.jpg', alt='')
+                
+              li.portfolio-item
+                img.img-responsive(src='images/photo/photo9.jpg', alt='')
+      // end portfolio section
+      // Testimonial section
+      section#testimonials4.parallax
+        .overlay4
+          .container
+            .row
+              .sec-title.text-center.white.wow.animated.fadeInDown
+                h2 PHOTO PACKAGE
+              #testimonial.wow.animated.fadeInUp
+                .testimonial-item2.text-center
+                  img(src='images/photo/photo13.jpg', alt='')
+                  .clearfix
+                    span SILVER
+                    p
+                      | Kiddie Parties, Baptismal and Birthday Parties
+                .testimonial-item2.text-center
+                  img(src='images/photo/photo14.jpg', alt='')
+                  .clearfix
+                    span GOLD
+                    p
+                      | Adult Parties, Special Events and Other
+                .testimonial-item2.text-center
+                  img(src='images/photo/photo15.jpg', alt='')
+                  .clearfix
+                    span DIAMOND
+                    p
+                      | Debut, Wedding and Other
+      // end Testimonial section
+      // Price section
+      section#price
+
+        .container
+          .row
+            .sec-title.text-center.wow.animated.fadeInDown
+              h2 Price
+              p Our price for ideal food catering
+            .col-md-4.wow.animated.fadeInUp
+              .price-table.text-center
+                span Silver
+                .value
+                  span ₱
+                  span 22,000
+                  br
+                  
+                ul
+                  portfolio-item
+                  img.img-responsive(src='images/photo/photo10.jpg', alt='')
+
+                  ul.external2
+                    li
+                     a.fancybox(title='SILVER', data-fancybox-group='works', href='images/photo/photo10.jpg')
+                      i.fa.fa-search
+                    
+                  figcaption.mask2
+                  li Kiddie Parties
+                  li Baptismal
+                  li Birthday Parties
+                  li
+                    a(href='/contact') sign up
+
+            .col-md-4.wow.animated.fadeInUp(data-wow-delay='0.4s')
+              .price-table.featured.text-center
+                span Gold
+                .value
+                  span ₱
+                  span 25,000
+                  br
+                  
+                ul
+                  portfolio-item
+                  img.img-responsive(src='images/photo/photo11.jpg', alt='')
+
+                  ul.external2
+                    li
+                     a.fancybox(title='GOLD', data-fancybox-group='works', href='images/photo/photo11.jpg')
+                      i.fa.fa-search
+                    
+                  figcaption.mask2
+                  li Adult Parties
+                  li Special Events
+                  li Other
+                  li
+                    a(href='/contact') sign up
+            .col-md-4.wow.animated.fadeInUp(data-wow-delay='0.8s')
+              .price-table.text-center
+                span Diamond
+                .value
+                  span ₱
+                  span 35,000
+                  br
+                  
+                ul
+                  portfolio-item
+                  img.img-responsive(src='images/photo/photo12.jpg', alt='')
+
+                  ul.external2
+                    li
+                     a.fancybox(title='DIAMOND', data-fancybox-group='works', href='images/photo/photo12.jpg')
+                      i.fa.fa-search
+                    
+                  figcaption.mask2
+                  li Debut
+                  li Wedding
+                  li other
+                  li
+                    a(href='/contact') sign up
+      // end Price section
+      // Social section
+      section#social4.parallax
+        .overlay4
+          .container
+            .row
+              .sec-title.text-center.white.wow.animated.fadeInDown
+                h2 Cherish Every Moments
+                p With Fresh Minds, perfectionist digital photography and cinematography are greatly considered. From womb-to-tomb, our team covers significant events while making our clients' wishes come true.
+              ul.social-button
+                li.wow.animated.zoomIn
+                  a(href='/')
+                    i.fa.fa-group.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.3s')
+                  a(href='/catering')
+                    i.fa.fa-birthday-cake.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.6s')
+                  a(href='/venue ')
+                    i.fa.fa-globe.fa-2x
+                li.wow.animated.zoomIn(data-wow-delay='0.6s')
+                  a(href='/photo')
+                    i.fa.fa-camera-retro.fa-2x
+      // end Social section
+ 

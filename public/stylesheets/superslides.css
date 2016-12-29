@@ -1,0 +1,84 @@
+#slides {
+  position: relative;
+}
+#slides .slides-container {
+  display: none;
+}
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+}
+.slides-navigation a.prev {
+  left: 0;
+}
+.slides-navigation a.next {
+  right: 0;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.slides-pagination a {
+  border: 2px solid #222;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+  margin: 2px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+.slides-pagination a.current {
+  background: #222;
+}
+
+#showcase{display:block; width:100%;}
+#showcase h2{display:block; position:relative; width:100%; margin-bottom:45px; text-align:center; text-transform:uppercase; font-size:32px;}
+#showcase h2::before{display:inline-block; position:absolute; top:50%; left:0; width:100%; content:""; z-index:-1;}
+#showcase h2 span{padding:5px 15px;}
+#showcase ul li a:hover strong{display:none;}
+
+#showcase h3{display:block; position:relative; width:100%; text-align:center; text-transform:uppercase; font-size:20px;  color:#bababa; }
+#showcase h3::before{  color:#bababa;  position:absolute; top:50%; left:0; width:100%; content:""; z-index:-1;}
+#showcase h3 span{padding:5px 15px; background-color:#303030; border-radius:10px; text-align:center;  color:#bababa; }
+#showcase ul li a:hover strong{display:none;}
+
+#showcase ul{margin:0; padding:0; list-style-type:none;}
+#showcase ul li{display:block; position:relative; float:left; width:300px; margin:0 0 30px 30px;}
+#showcase ul li:first-child, #showcase ul li.first{margin-left:0;}
+#showcase ul li figure{}
+#showcase ul li a{display:block; font-size:14px;}
+#showcase ul li a strong{display:block; position:absolute; bottom:5px; left:5px; width:270px; margin:0; padding:5px 10px; text-align:center; font-weight:normal; text-transform:uppercase;}
+#showcase ul li a:hover strong{display:none;}
