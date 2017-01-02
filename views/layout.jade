@@ -41,12 +41,13 @@ html.no-js(lang='en')
         .row.text-center
           .footer-content
             .wow.animated.fadeInDown
-              p newsletter signup
+              p Contact Us 
               p sample footer add ons only no links :>
             form.subscribe-form.wow.animated.fadeInUp(action='#', method='post')
               .input-field
                 input.subscribe.form-control(type='email', placeholder='Enter Your Email...')
-                button.submit-icon(type='submit')
+                button.submit-icon(type='button', onclick="location.href='/contact';")
+
                   i.fa.fa-paper-plane.fa-lg
             .footer-social
               ul
