@@ -523,6 +523,7 @@ h1.navbar-brand {
 #about {
     background-color: #009EE3;
     color: #fff;
+
 }
 #about h3 {
     color: #fff;
@@ -582,8 +583,8 @@ h1.navbar-brand {
 #about2 {
     background-color: #009EE3;
     color: #fff;
-}
-#about2 h3 {
+} 
+#about h3 {
     color: #fff;
     font-size: 40px;
     margin: 0 0 20px;
@@ -1464,11 +1465,14 @@ textarea.form-control {
 
 #google-map {
     padding: 0;
+
 }
 
 #map-canvas {
     width: 100%;
     height: 300px;
+    border: 5px solid #000000;
+
 }
 
 
@@ -1724,7 +1728,6 @@ textarea.form-control {
     .caption-content strong {
         font-size: 22px;
     }
-
 /* about */
     .recent-works {
         margin-bottom: 85px;
